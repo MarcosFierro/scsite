@@ -52,9 +52,13 @@ defmodule Scsite.MixProject do
       {:telemetry_metrics, "~> 1.0"},
       {:telemetry_poller, "~> 1.0"},
       {:gettext, "~> 0.26"},
-      {:jason, "~> 1.2"},
       {:dns_cluster, "~> 0.1.1"},
-      {:bandit, "~> 1.5"}
+      {:bandit, "~> 1.5"},
+      # {:ex_aws, "~> 2.3"},
+      # {:ex_aws_ses, "~> 2.3"},
+      {:tesla, "~> 1.4"},
+      {:jason, "~> 1.4"},
+      {:hackney, "~> 1.18"}
     ]
   end
 

@@ -6,5 +6,7 @@ defmodule ScsiteWeb.PageHTML do
   """
   use ScsiteWeb, :html
 
+  alias ScsiteWeb.ContactForm
+
   embed_templates "page_html/*"
 end
