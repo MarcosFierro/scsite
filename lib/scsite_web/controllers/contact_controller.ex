@@ -36,4 +36,8 @@ defmodule ScsiteWeb.ContactController do
       {Tesla.Middleware.BaseUrl, @formspree_url}
     ])
   end
+
+  def new(conn, _params) do
+    render(conn, :contact)
+  end
 end

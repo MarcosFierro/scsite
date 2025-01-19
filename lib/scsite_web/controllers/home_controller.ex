@@ -1,10 +1,10 @@
-defmodule ScsiteWeb.PageController do
+defmodule ScsiteWeb.HomeController do
   use ScsiteWeb, :controller
 
   alias Scsite.CMS
 
   def home(conn, _params) do
-    render(conn, :home, layout: false, form: %{"email" => "", "message" => ""})
+    render(conn, :home, form: %{"email" => "", "message" => ""})
 
     # case CMS.get_home_page_content() do
     #   {:ok, content} -> render_home(conn, content, params)
@@ -22,6 +22,6 @@ defmodule ScsiteWeb.PageController do
   end
 
   def faqs(conn, _params) do
-    render(conn, :faqs, layout: false, form: %{"email" => "", "message" => ""})
+    render(conn, :faqs, form: %{"email" => "", "message" => ""})
   end
 end
