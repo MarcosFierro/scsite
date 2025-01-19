@@ -19,8 +19,7 @@ defmodule ScsiteWeb.Router do
 
     get "/", PageController, :home
     get "/faqs", PageController, :faqs
-    get "/contact", ContactController, :new
-    post "/contact", ContactController, :create
+    post "/contact", ContactController, :submit
   end
 
   # Other scopes may use custom stacks.
