@@ -17,8 +17,8 @@ defmodule ScsiteWeb.Router do
   scope "/", ScsiteWeb do
     pipe_through :browser
 
-    get "/", PageController, :home
-    get "/faqs", PageController, :faqs
+    get "/", HomeController, :home
+    get "/faqs", HomeController, :faqs
     get "/contact", ContactController, :new
     post "/contact", ContactController, :create
   end
