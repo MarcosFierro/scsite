@@ -19,7 +19,8 @@ defmodule ScsiteWeb.Router do
 
 
     get "/", HomeController, :home
-    get "/faqs", PageController, :faqs
+    get "/faqs", HomeController, :faqs
+    get "/pricing", HomeController, :pricing
     get "/contact", ContactController, :new
     post "/contact", ContactController, :submit
   end

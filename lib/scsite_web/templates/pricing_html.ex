@@ -4,5 +4,7 @@ defmodule ScsiteWeb.PricingHTML do
   """
   use ScsiteWeb, :html
 
+  alias ScsiteWeb.ContactForm
+
   embed_templates "pricing/*"
 end

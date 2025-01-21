@@ -22,6 +22,12 @@ defmodule ScsiteWeb.HomeController do
   end
 
   def faqs(conn, _params) do
-    render(conn, :faqs, form: %{"email" => "", "message" => ""})
+    render(conn, :faqs)
+  end
+
+  def pricing(conn, _params) do
+    conn
+    |> put_view(ScsiteWeb.PricingHTML)
+    |> render(:pricing, form: %{"email" => "", "message" => ""})
   end
 end

@@ -1,146 +1,45 @@
-<div class="">
-  <!-- Hero Section -->
-  <div class="bg-sky-500 text-white py-12">
-    <div class="container mx-auto text-center">
-      <img src={~p"/images/logo.png"} width="36" />
-      <h1 class="text-4xl font-bold">Hacé Crecer Tu Second - Hand & Tienda De Alquiler</h1>
+<div class="bg-[#4285F4] px-8 py-20 rounded-[40px]">
+  <div class="max-w-6xl mx-auto">
+    <div class="flex justify-center gap-8 mb-20">
+      <h1 class="text-9xl text-black pb-4">Contacto</h1>
+      <img src={~p"/images/sobre.gif"} class="w-[200px] object-contain" />
     </div>
-    <p class="text-xl mt-4">
-      Gestioná tu stock local, proveedores, pago de comisiones y ventas por e-commerce.
-Todo en un solo lugar.
 
-    </p>
-    <a
-      href="#features"
-      class="mt-6 inline-block bg-white text-sky-500 font-bold px-6 py-3 rounded shadow hover:bg-gray-100"
-    >
-      EMPEZAR AHORA
-    </a>
-  </div>
-  
-<!-- Mission Section -->
-  <div class="flex overflow-hidden h-12 space-x-16">
-    <div class="whitespace-nowrap text-black font-bold text-lg flex items-center animate-loop-scroll">
-      ♻ EL FUTURO ES COLABORATIVO ⇄ EL FUTURO ES CIRCULAR ♻ EL FUTURO ES COLABORATIVO ⇄
-    </div>
-    <div class="whitespace-nowrap text-black font-bold text-lg flex items-center animate-loop-scroll" aria-hidden="true">
-      ♻ EL FUTURO ES COLABORATIVO ⇄ EL FUTURO ES CIRCULAR ♻ EL FUTURO ES COLABORATIVO ⇄
-    </div>
-  </div>
-  
-<!-- Features Section -->
-  <section id="features" class="">
-    <ul>
-      <li>
-        <img src={~p"/images/logo.png"} width="36" />
-        <div>
-          <h3>DESDE DONDE ESTES</h3>
-          <p>Administra tu negocio desde cualquier lugar.</p>
-          <a
-            href="#features"
-            class="mt-6 inline-block bg-white text-sky-500 font-bold px-6 py-3 rounded shadow hover:bg-gray-100"
-          >
-            EMPEZAR AHORA
-          </a>
+    <div class="text-white grid md:grid-cols-2 gap-20">
+      <div>
+        <p class="text-2xl leading-relaxed">
+          Si te interesa conocer mas acerca de Software Circular o tenés alguna duda podes escribirnos o dejarnos tus datos y nos ponemos en contacto contigo a la abrevedad.
+        </p>
+      </div>
+
+      <div class="space-y-7">
+        <div class="border-b border-white pb-4">
+          <p class="text-xl">E-mail: &nbsp; softwarecircular@gmail.com</p>
         </div>
-      </li>
-      <li>
-           <img src={~p"/images/logo.png"} width="36" />
-            <div>
-              <h3>TODO SINCRONIZADO</h3>
-              <p>El stock de tu tienda fisica sincronizado con tu tienda online para una excelente experiencia.</p>
-              <a
-                href="#features"
-                class="mt-6 inline-block bg-white text-sky-500 font-bold px-6 py-3 rounded shadow hover:bg-gray-100"
-              >
-                EMPEZAR AHORA
-              </a>
-            </div>
-      </li>
-      <li>
-      <img src={~p"/images/logo.png"} width="36" />
-          <div>
-            <h3>PROVEEDORES & COMISIONES</h3>
-            <p>Gestiona multiples proveedores con comisiones por ventas a la perfección!</p>
-            <a
-              href="#features"
-              class="mt-6 inline-block bg-white text-sky-500 font-bold px-6 py-3 rounded shadow hover:bg-gray-100"
-            >
-              EMPEZAR AHORA
-            </a>
-          </div>
-      </li>
-      <li>
-        <img src={~p"/images/logo.png"} width="36" />
-            <div>
-              <h3>HACE EXPLOTAR TUS VENTAS!</h3>
-              <p>Personaliza el sitio y desarrolla tu presencia online.</p>
-              <a
-                href="#features"
-                class="mt-6 inline-block bg-white text-sky-500 font-bold px-6 py-3 rounded shadow hover:bg-gray-100"
-              >
-                EMPEZAR AHORA
-              </a>
-            </div>
-      </li>
-    </ul>
-  </section>
-  
-  <section class="bg-sky-600 text-white py-12">
-    <h1>EN CUATRO PASOS</h1>
-    <ul>
-      <li>
-        <span>1</span>
-      </li>
-      <li>
-       <span>2</span>
-      </li>
-      <li>
-      <span>3</span>
-      </li>
-      <li>
-      <span>4</span>
-      </li>
-    </ul>
-  </section>
+        <div class="border-b border-white pb-4">
+          <p class="text-xl">Teléfono: &nbsp; (+598) 099 926 236</p>
+        </div>
+        <div class="border-b border-white pb-4">
+          <p class="text-xl">Instagram: &nbsp; @softwarecircular</p>
+        </div>
+        <div class="border-b border-white pb-4">
+          <p class="text-xl">Linkedin: &nbsp; Software Circular</p>
+        </div>
+      </div>
+    </div>
 
-<!-- Clients -->
-  <section class="bg-sky-600 text-white py-12">
-    <h1>ELLOS YA NOS ELIGIERON</h1>
-    <ul>
-      <li>
-        <img src={~p"/images/logo.png"} width="36" />
-        <h4>C1</h4>
-        <span>SECOND HAND</span>
-      </li>
-      <li>
-       <img src={~p"/images/logo.png"} width="36" />
-       <h4>C1</h4>
-       <span>SECOND HAND</span>
-      </li>
-      <li>
-      <img src={~p"/images/logo.png"} width="36" />
-      <h4>C1</h4>
-      <span>SECOND HAND</span>
-      </li>
-    </ul>
-  </section>
+    <div class="mt-24 text-center">
+      <button
+        phx-click={show_modal("contact-modal")}
+        class="bg-black text-white px-8 py-4 rounded-full text-xl hover:bg-gray-800"
+      >
+        DEJANOS UN MENSAJE
+      </button>
+    </div>
+  </div>
 
-
-<!-- Call to Action -->
-  <section class="bg-sky-600 text-white py-12">
-    <p>Desde U$S 150 por mes</p>
-    <h1>¿Todo pronto para despegar?</h1>
-    <img src={~p"/images/logo.png"} width="36" />
-    <a
-                href="#features"
-                class="mt-6 inline-block bg-white text-sky-500 font-bold px-6 py-3 rounded shadow hover:bg-gray-100"
-              >
-                EMPEZAR AHORA
-              </a>
-  </section>
-
-
+  <.modal id="contact-modal">
+    <ContactForm.form form={@form} />
+  </.modal>
 
 </div>
-<.flash_group flash={@flash} />

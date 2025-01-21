@@ -38,6 +38,6 @@ defmodule ScsiteWeb.ContactController do
   end
 
   def new(conn, _params) do
-    render(conn, :contact)
+    render(conn, :contact, form: %{"email" => "", "message" => ""})
   end
 end
