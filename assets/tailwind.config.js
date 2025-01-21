@@ -17,14 +17,17 @@ module.exports = {
         backgblue: "#427AE4",
       },
       animation: {
-        'loop-scroll': 'loop-scroll 50s linear infinite',
+        'loop-scroll': 'loop-scroll 15s linear infinite',
       },
       keyframes: {
         'loop-scroll': {
           from: { transform: 'translateX(0)' },
           to: { transform: 'translateX(-100%)' },
         }
-      }                    
+      },
+      fontFamily: {
+        'diatype-mono': ['"Diatype Mono Variable"', 'monospace']
+      },              
     },
   },
   plugins: [

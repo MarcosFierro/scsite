@@ -3,3 +3,11 @@
 @import "tailwindcss/utilities";
 
 /* This file is for your main application CSS */
+@font-face {
+    font-family: 'Diatype Mono Variable';
+    src: url('/fonts/DiatypePlusVariable.woff2') format('woff2'),
+         url('/fonts/DiatypePlusVariable.woff') format('woff');
+    font-weight: 100 900; /* Adjust range based on your font file */
+    font-style: normal;
+    font-display: swap;
+  }

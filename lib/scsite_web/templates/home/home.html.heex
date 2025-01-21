@@ -1,144 +1,173 @@
-<.flash_group flash={@flash} />
 <div class="">
   <!-- Hero Section -->
-  <div class="bg-sky-500 text-white py-12">
-    <div class="container mx-auto text-center">
-      <img src={~p"/images/logo.png"} width="36" />
-      <h1 class="text-4xl font-bold">Hacé Crecer Tu Second - Hand & Tienda De Alquiler</h1>
+  <div class="max-w-[90%] mx-auto text-white py-12 flex flex-col gap-y-2 items-center">
+    <div class="container flex gap-x-5">
+      <img src={~p"/images/regadera.gif"} class="max-w-[500px] object-contain" />
+      <p class="text-[118px] leading-[1] font-[450px]">Hacé Crecer Tu Second - Hand & Tienda De Alquiler</p>
     </div>
-    <p class="text-xl mt-4">
+    <p class="text-2xl mt-6 text-center w-3/4 text-black whitespace-pre-wrap">
       Gestioná tu stock local, proveedores, pago de comisiones y ventas por e-commerce.
-Todo en un solo lugar.
-
+      Todo en un solo lugar.
     </p>
-    <a
-      href="#features"
-      class="mt-6 inline-block bg-white text-sky-500 font-bold px-6 py-3 rounded shadow hover:bg-gray-100"
+    <button
+      phx-click={show_modal("contact-modal")}
+      class="w-fit mt-4 bg-black text-white font-bold px-6 py-3 rounded-3xl shadow hover:bg-gray-600"
     >
       EMPEZAR AHORA
-    </a>
+    </button>
   </div>
   
-<!-- Mission Section -->
-  <div class="flex overflow-hidden h-12 space-x-16">
-    <div class="whitespace-nowrap text-black font-bold text-lg flex items-center animate-loop-scroll">
-      ♻ EL FUTURO ES COLABORATIVO ⇄ EL FUTURO ES CIRCULAR ♻ EL FUTURO ES COLABORATIVO ⇄
+  <div class="flex overflow-hidden h-[50px] my-20 space-x-32 border-y-2 border-gray-900">
+    <div class="font-diatype-mono whitespace-nowrap text-gray-900 font-light text-3xl animate-loop-scroll flex items-center" aria-hidden="true">
+      EL FUTURO ES COLABORATIVO &nbsp; ⇄ &nbsp; EL FUTURO ES COMPARTIDO &nbsp;
+      <.icon name="hero-globe-alt" class="h-8 w-8" /> &nbsp;
+      EL FUTURO ES CIRCULAR &nbsp; <.icon name="hero-arrow-path" class="h-8 w-8" /> &nbsp;
     </div>
-    <div class="whitespace-nowrap text-black font-bold text-lg flex items-center animate-loop-scroll" aria-hidden="true">
-      ♻ EL FUTURO ES COLABORATIVO ⇄ EL FUTURO ES CIRCULAR ♻ EL FUTURO ES COLABORATIVO ⇄
+    <div class="font-diatype-mono whitespace-nowrap text-gray-900 font-light text-3xl animate-loop-scroll flex items-center" aria-hidden="true">
+      EL FUTURO ES COLABORATIVO &nbsp; ⇄ &nbsp; EL FUTURO ES COMPARTIDO &nbsp;
+      <.icon name="hero-globe-alt" class="h-8 w-8" /> &nbsp;
+      EL FUTURO ES CIRCULAR &nbsp; <.icon name="hero-arrow-path" class="h-8 w-8" /> &nbsp;
+    </div>
+    <div class="font-diatype-mono whitespace-nowrap text-gray-900 font-light text-3xl animate-loop-scroll flex items-center" aria-hidden="true">
+      EL FUTURO ES COLABORATIVO &nbsp; ⇄ &nbsp; EL FUTURO ES COMPARTIDO &nbsp;
+      <.icon name="hero-globe-alt" class="h-8 w-8" /> &nbsp;
+      EL FUTURO ES CIRCULAR &nbsp; <.icon name="hero-arrow-path" class="h-8 w-8" /> &nbsp;
     </div>
   </div>
   
 <!-- Features Section -->
   <section id="features" class="">
-    <ul>
-      <li>
-        <img src={~p"/images/logo.png"} width="36" />
-        <div>
-          <h3>DESDE DONDE ESTES</h3>
-          <p>Administra tu negocio desde cualquier lugar.</p>
-          <a
-            href="#features"
-            class="mt-6 inline-block bg-white text-sky-500 font-bold px-6 py-3 rounded shadow hover:bg-gray-100"
+    <ul class="grid grid-cols-1 gap-y-8">
+      <li class=" text-white p-12 flex items-center justify-between">
+        <img src={~p"/images/mobile-BN.jpg"} width="400" class="rounded-lg" />
+        <div class="text-right max-w-lg">
+          <h3 class="text-6xl font-bold mb-4">DESDE DONDE ESTES</h3>
+          <p class="text-2xl mb-6">→ Administra tu negocio desde cualquier lugar.</p>
+          <button
+            phx-click={show_modal("contact-modal")}
+            class="w-fit mt-4 bg-black text-white font-bold px-6 py-3 rounded-3xl shadow hover:bg-gray-600"
           >
             EMPEZAR AHORA
-          </a>
+          </button>
         </div>
       </li>
-      <li>
-           <img src={~p"/images/logo.png"} width="36" />
-            <div>
-              <h3>TODO SINCRONIZADO</h3>
-              <p>El stock de tu tienda fisica sincronizado con tu tienda online para una excelente experiencia.</p>
-              <a
-                href="#features"
-                class="mt-6 inline-block bg-white text-sky-500 font-bold px-6 py-3 rounded shadow hover:bg-gray-100"
-              >
-                EMPEZAR AHORA
-              </a>
-            </div>
+      
+      <li class=" text-white p-12 flex items-center justify-between">
+        <img src={~p"/images/pc-BN.jpg"} width="400" class="rounded-lg" />
+        <div class="text-right max-w-lg">
+          <h3 class="text-6xl font-bold mb-4">TODO SINCRONIZADO</h3>
+          <p class="text-2xl mb-6">→ El stock de tu tienda fisica sincronizado con tu tienda online para una excelente experiencia.</p>
+          <button
+            phx-click={show_modal("contact-modal")}
+            class="w-fit mt-4 bg-black text-white font-bold px-6 py-3 rounded-3xl shadow hover:bg-gray-600"
+          >
+            EMPEZAR AHORA
+          </button>
+        </div>
       </li>
-      <li>
-      <img src={~p"/images/logo.png"} width="36" />
-          <div>
-            <h3>PROVEEDORES & COMISIONES</h3>
-            <p>Gestiona multiples proveedores con comisiones por ventas a la perfección!</p>
-            <a
-              href="#features"
-              class="mt-6 inline-block bg-white text-sky-500 font-bold px-6 py-3 rounded shadow hover:bg-gray-100"
-            >
-              EMPEZAR AHORA
-            </a>
-          </div>
+
+      <li class=" text-white p-12 flex items-center justify-between">
+        <img src={~p"/images/caja-ropa-BN.jpg"} width="400" class="rounded-lg" />
+        <div class="text-right max-w-lg">
+          <h3 class="text-6xl font-bold mb-4">PROVEEDORES & COMISIONES</h3>
+          <p class="text-2xl mb-6">→ Gestiona multiples proveedores con comisiones por ventas a la perfección!</p>
+          <button
+            phx-click={show_modal("contact-modal")}
+            class="w-fit mt-4 bg-black text-white font-bold px-6 py-3 rounded-3xl shadow hover:bg-gray-600"
+          >
+            EMPEZAR AHORA
+          </button>
+        </div>
       </li>
-      <li>
-        <img src={~p"/images/logo.png"} width="36" />
-            <div>
-              <h3>HACE EXPLOTAR TUS VENTAS!</h3>
-              <p>Personaliza el sitio y desarrolla tu presencia online.</p>
-              <a
-                href="#features"
-                class="mt-6 inline-block bg-white text-sky-500 font-bold px-6 py-3 rounded shadow hover:bg-gray-100"
-              >
-                EMPEZAR AHORA
-              </a>
-            </div>
+
+      <li class=" text-white p-12 flex items-center justify-between">
+        <img src={~p"/images/pc-BN.jpg"} width="400" class="rounded-lg" />
+        <div class="text-right max-w-lg">
+          <h3 class="text-6xl font-bold mb-4">HACE EXPLOTAR TUS VENTAS!</h3>
+          <p class="text-2xl mb-6">→ Personaliza el sitio y desarrolla tu presencia online.</p>
+          <button
+            phx-click={show_modal("contact-modal")}
+            class="w-fit mt-4 bg-black text-white font-bold px-6 py-3 rounded-3xl shadow hover:bg-gray-600"
+          >
+            EMPEZAR AHORA
+          </button>
+        </div>
       </li>
     </ul>
   </section>
   
-  <section class="bg-sky-600 text-white py-12">
-    <h1>EN CUATRO PASOS</h1>
-    <ul>
-      <li>
-        <span>1</span>
+  <section class=" text-white py-24 px-12">
+    <h1 class="text-center text-7xl font-bold mb-20">EN CUATRO PASOS</h1>
+    <ul class="grid grid-cols-4 gap-x-8 max-w-7xl mx-auto">
+      <li class="text-center">
+        <span class="text-8xl font-bold block mb-4">1</span>
+        <h3 class="text-2xl font-bold mb-3">SET-UP</h3>
+        <p class="text-lg">Implica migrar los datos y customizar el sito con el contenido de la empresa.</p>
       </li>
-      <li>
-       <span>2</span>
+      <li class="text-center">
+        <span class="text-8xl font-bold block mb-4">2</span>
+        <h3 class="text-2xl font-bold mb-3">CAPACITACIÓN</h3>
+        <p class="text-lg">Se entregan manuales de proceso y videos tutoriales para que el equipo que se capacite on-demand.</p>
       </li>
-      <li>
-      <span>3</span>
+      <li class="text-center">
+        <span class="text-8xl font-bold block mb-4">3</span>
+        <h3 class="text-2xl font-bold mb-3">SERVICIO</h3>
+        <p class="text-lg">Implica migrar los datos y customizar el sito con el contenido de la empresa.</p>
       </li>
-      <li>
-      <span>4</span>
+      <li class="text-center">
+        <span class="text-8xl font-bold block mb-4">4</span>
+        <h3 class="text-2xl font-bold mb-3">SOPORTE</h3>
+        <p class="text-lg">Implica migrar los datos y customizar el sito con el contenido de la empresa.</p>
       </li>
     </ul>
+    <button
+      phx-click={show_modal("contact-modal")}
+      class="w-fit mt-4 bg-black text-white font-bold px-6 py-3 rounded-3xl shadow hover:bg-gray-600"
+    >
+      EMPEZAR AHORA
+    </button>
   </section>
 
 <!-- Clients -->
-  <section class="bg-sky-600 text-white py-12">
-    <h1>ELLOS YA NOS ELIGIERON</h1>
-    <ul>
-      <li>
-        <img src={~p"/images/logo.png"} width="36" />
-        <h4>C1</h4>
-        <span>SECOND HAND</span>
+  <section id="clients" class=" text-white py-24 px-12">
+    <h1 class="text-center text-7xl font-bold mb-20">ELLOS YA NOS ELIGIERON</h1>
+    <ul class="grid grid-cols-3 gap-x-8 max-w-7xl mx-auto">
+      <li class="text-center">
+        <div class="bg-white rounded-lg overflow-hidden mb-4">
+          <img src={~p"/images/chica-cartera-violeta.jpg"} class="w-full h-[300px] object-cover" />
+        </div>
+        <h4 class="text-4xl font-bold mb-2">RETROKA</h4>
+        <span class="text-xl">SECOND HAND</span>
       </li>
-      <li>
-       <img src={~p"/images/logo.png"} width="36" />
-       <h4>C1</h4>
-       <span>SECOND HAND</span>
+      <li class="text-center">
+        <div class="bg-white rounded-lg overflow-hidden mb-4">
+          <img src={~p"/images/ropa-west.jpg"} class="w-full h-[300px] object-cover" />
+        </div>
+        <h4 class="text-4xl font-bold mb-2">VARIETE</h4>
+        <span class="text-xl">SECOND HAND</span>
       </li>
-      <li>
-      <img src={~p"/images/logo.png"} width="36" />
-      <h4>C1</h4>
-      <span>SECOND HAND</span>
+      <li class="text-center">
+        <div class="bg-white rounded-lg overflow-hidden mb-4">
+          <img src={~p"/images/chica-radio-retro.jpg"} class="w-full h-[300px] object-cover" />
+        </div>
+        <h4 class="text-4xl font-bold mb-2">1000 RAZONES</h4>
+        <span class="text-xl">ALQUILER</span>
       </li>
     </ul>
   </section>
 
 
 <!-- Call to Action -->
-  <section class="bg-sky-600 text-white py-12">
-    <p>Desde U$S 150 por mes</p>
-    <h1>¿Todo pronto para despegar?</h1>
-    <img src={~p"/images/logo.png"} width="36" />
+  <section class=" text-white py-24 px-12 text-center">
+    <p class="text-2xl mb-4">Desde U$S 150 por mes</p>
+    <h1 class="text-[80px] leading-tight mb-8">¿Todo pronto para<br/>despegar?</h1>
+    <img src={~p"/images/paloma.png"} class="w-24 mx-auto mb-6" />
     <button
-        phx-click={show_modal("contact-modal")}
-        class="mt-6 inline-block bg-white text-sky-600 font-bold px-6 py-3 rounded shadow hover:bg-gray-100"
-      >
-        Start Free Trial
-      </button>
+      phx-click={show_modal("contact-modal")}
+      class="bg-black text-white font-bold px-8 py-4 rounded-3xl text-xl hover:bg-gray-800"
+    >
+      EMPEZAR AHORA
+    </button>
   </section>
 
 
