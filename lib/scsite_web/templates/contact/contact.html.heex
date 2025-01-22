@@ -1,8 +1,8 @@
 <div class="bg-[#4285F4] px-8 py-20 rounded-[40px]">
   <div class="max-w-6xl mx-auto">
-    <div class="flex justify-center gap-8 mb-20">
-      <h1 class="text-9xl text-black pb-4">Contacto</h1>
-      <img src={~p"/images/sobre.gif"} class="w-[200px] object-contain" />
+    <div class="flex justify-center gap-8 mb-10 lg:mb-20">
+      <h1 class="text-5xl lg:text-9xl text-black font-bold lg:font-normal pb-4">Contacto</h1>
+      <img src={~p"/images/sobre.gif"} class="w-[90px] lg:w-[200px] object-contain" />
     </div>
 
     <div class="text-white grid md:grid-cols-2 gap-20">
@@ -11,6 +11,13 @@
           Si te interesa conocer mas acerca de Software Circular o tenés alguna duda podes escribirnos o dejarnos tus datos y nos ponemos en contacto contigo a la abrevedad.
         </p>
       </div>
+
+      <button
+        phx-click={show_modal("contact-modal")}
+        class="md:hidden w-fit bg-black text-white px-6 py-4 rounded-full mx-auto text-xl hover:bg-gray-800"
+      >
+        DEJANOS UN MENSAJE
+      </button>
 
       <div class="space-y-7">
         <div class="border-b border-white pb-4">
@@ -28,7 +35,7 @@
       </div>
     </div>
 
-    <div class="mt-24 text-center">
+    <div class="hidden md:block mt-24 text-center">
       <button
         phx-click={show_modal("contact-modal")}
         class="bg-black text-white px-8 py-4 rounded-full text-xl hover:bg-gray-800"

@@ -1,11 +1,13 @@
 <header class="px-6 sm:px-6 lg:px-10">
   <div class="flex items-center justify-between py-6 text-sm">
-    <div class="flex items-center gap-4">
+    <div class="shrink-0">
       <a href="/">
-        <img src={~p"/images/logo.png"} width="100" />
+        <img src={~p"/images/logo.png"} class="w-[60px] lg:w-[100px]" />
       </a>
     </div>
-    <div class="flex items-center gap-12 font-semibold leading-6 text-zinc-900">
+    
+    <!-- Desktop Navigation -->
+    <div id="desktop-navbar" class="hidden md:flex items-center gap-12 font-semibold leading-6 text-zinc-900">
       <a href="/contact" class="hover:text-zinc-700 text-lg">
         CONTACTO
       </a>
@@ -30,19 +32,67 @@
         </a>
       </div>
     </div>
+
+    <!-- Mobile Menu Button -->
+    <button 
+      id="mobile-menu-button"
+      class="md:hidden p-2 rounded-md hover:bg-zinc-100"
+      phx-click={JS.toggle(to: "#mobile-menu")}
+    >
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+      </svg>
+    </button>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div id="mobile-menu" class="hidden md:hidden">
+    <div class="flex flex-col items-end px-2 pt-2 pb-3 space-y-1">
+      <a href="/faqs" class="block w-fit px-3 py-2 rounded-md text-base font-medium hover:bg-zinc-100">
+        FAQ
+      </a>
+      <a href="/pricing" class="block w-fit px-3 py-2 rounded-md text-base font-medium hover:bg-zinc-100">
+        PRECIOS
+      </a>
+      <a href="/contact" class="block w-fit px-3 py-2 rounded-md text-base font-medium hover:bg-zinc-100">
+        CONTACTO
+      </a>
+      <div class="flex justify-end px-3 py-2 space-x-4">
+        <a
+          href="https://www.instagram.com/softwarecircular/"
+          class="rounded-lg hover:bg-zinc-200/80"
+        >
+          <img src={~p"/images/instagram_logo.png"} width="36" />
+        </a>
+        <a
+          href="https://www.linkedin.com/company/software-circular/about/"
+          class="rounded-lg hover:bg-zinc-200/80"
+        >
+          <img src={~p"/images/linkedin_logo.png"} width="36" />
+        </a>
+      </div>
+    </div>
   </div>
 </header>
-<main class="px-4 pt-10 pb-20 sm:px-6 lg:px-8">
+<main class="px-4 pt-10 pb-10 lg:pb-20 sm:px-6 lg:px-8">
   <div class="mx-auto">
     <.flash_group flash={@flash} />
     {@inner_content}
   </div>
 </main>
 <footer class="px-6 sm:px-6 lg:px-10">
-  <div class="relative flex items-center py-8 lg:text-2xl">
+  <!-- Desktop Footer -->
+  <div class="relative hidden md:flex items-center py-8 lg:text-2xl">
     <span class="absolute left-20">softwarecircular@gmail.com</span>
     <span class="inline-block mx-auto">(+598) 099 926 236</span>
     <span class="absolute right-20">Maldonado, Uruguay</span>
+  </div>
+
+  <!-- Mobile Footer -->
+  <div class="md:hidden flex flex-col items-center py-6 space-y-4 text-center">
+    <span class="text-sm">softwarecircular@gmail.com</span>
+    <span class="text-sm">(+598) 099 926 236</span>
+    <span class="text-sm">Maldonado, Uruguay</span>
   </div>
 </footer>
 
