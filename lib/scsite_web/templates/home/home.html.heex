@@ -36,13 +36,13 @@
   </div>
   
 <!-- Features Section -->
-  <section id="features" class="">
-    <ul class="grid grid-cols-1 gap-y-8">
-      <li class=" text-white p-12 flex items-center justify-between">
-        <img src={~p"/images/mobile-BN.jpg"} width="400" class="rounded-lg" />
-        <div class="text-right max-w-lg">
-          <h3 class="text-6xl font-bold mb-4">DESDE DONDE ESTES</h3>
-          <p class="text-2xl mb-6">→ Administra tu negocio desde cualquier lugar.</p>
+  <section id="features" class="mb-20">
+    <ul class="max-w-[82%] mx-auto grid grid-cols-1 gap-y-24">
+      <li class=" text-white p-12 flex gap-20">
+        <img src={~p"/images/mobile-BN.jpg"} width="420" class="rounded-lg border-2 border-gray-900" />
+        <div class="max-w-lg">
+          <h3 class="text-6xl mb-6">DESDE DONDE ESTES</h3>
+          <p class="text-3xl text-black font-semibold mb-6"><.icon name="hero-arrow-right" class="h-8 w-8" /> &nbsp; Administra tu negocio desde cualquier lugar.</p>
           <button
             phx-click={show_modal("contact-modal")}
             class="w-fit mt-4 bg-black text-white font-bold px-6 py-3 rounded-3xl shadow hover:bg-gray-600"
@@ -52,11 +52,11 @@
         </div>
       </li>
       
-      <li class=" text-white p-12 flex items-center justify-between">
-        <img src={~p"/images/pc-BN.jpg"} width="400" class="rounded-lg" />
-        <div class="text-right max-w-lg">
-          <h3 class="text-6xl font-bold mb-4">TODO SINCRONIZADO</h3>
-          <p class="text-2xl mb-6">→ El stock de tu tienda fisica sincronizado con tu tienda online para una excelente experiencia.</p>
+      <li class=" text-white py-12 flex  gap-20 justify-end">
+        <img src={~p"/images/pc-BN.jpg"} width="420" class="rounded-lg border-2 border-gray-900" />
+        <div class="max-w-lg">
+          <h3 class="text-6xl mb-6">TODO SINCRONIZADO</h3>
+          <p class="text-3xl text-black font-semibold mb-6"><.icon name="hero-arrow-right" class="h-8 w-8" /> &nbsp;  El stock de tu tienda fisica sincronizado con tu tienda online para una excelente experiencia.</p>
           <button
             phx-click={show_modal("contact-modal")}
             class="w-fit mt-4 bg-black text-white font-bold px-6 py-3 rounded-3xl shadow hover:bg-gray-600"
@@ -66,11 +66,11 @@
         </div>
       </li>
 
-      <li class=" text-white p-12 flex items-center justify-between">
-        <img src={~p"/images/caja-ropa-BN.jpg"} width="400" class="rounded-lg" />
-        <div class="text-right max-w-lg">
-          <h3 class="text-6xl font-bold mb-4">PROVEEDORES & COMISIONES</h3>
-          <p class="text-2xl mb-6">→ Gestiona multiples proveedores con comisiones por ventas a la perfección!</p>
+      <li class=" text-white p-12 flex gap-20">
+        <img src={~p"/images/caja-ropa-BN.jpg"} width="420" class="rounded-lg border-2 border-gray-900" />
+        <div class="max-w-lg">
+          <h3 class="text-6xl mb-6">PROVEEDORES & COMISIONES</h3>
+          <p class="text-3xl text-black font-semibold mb-6"><.icon name="hero-arrow-right" class="h-8 w-8" /> &nbsp;  Gestiona multiples proveedores con comisiones por ventas a la perfección!</p>
           <button
             phx-click={show_modal("contact-modal")}
             class="w-fit mt-4 bg-black text-white font-bold px-6 py-3 rounded-3xl shadow hover:bg-gray-600"
@@ -80,11 +80,11 @@
         </div>
       </li>
 
-      <li class=" text-white p-12 flex items-center justify-between">
-        <img src={~p"/images/pc-BN.jpg"} width="400" class="rounded-lg" />
-        <div class="text-right max-w-lg">
-          <h3 class="text-6xl font-bold mb-4">HACE EXPLOTAR TUS VENTAS!</h3>
-          <p class="text-2xl mb-6">→ Personaliza el sitio y desarrolla tu presencia online.</p>
+      <li class=" text-white py-12 flex gap-20 justify-end">
+        <img src={~p"/images/pc-BN.jpg"} width="420" class="rounded-lg border-2 border-gray-900" />
+        <div class="max-w-lg">
+          <h3 class="text-6xl mb-6">HACE EXPLOTAR TUS VENTAS!</h3>
+          <p class="text-3xl text-black font-semibold mb-6"><.icon name="hero-arrow-right" class="h-8 w-8" /> &nbsp;  Personaliza el sitio y desarrolla tu presencia online.</p>
           <button
             phx-click={show_modal("contact-modal")}
             class="w-fit mt-4 bg-black text-white font-bold px-6 py-3 rounded-3xl shadow hover:bg-gray-600"
@@ -95,62 +95,70 @@
       </li>
     </ul>
   </section>
-  
-  <section class=" text-white py-24 px-12">
-    <h1 class="text-center text-7xl font-bold mb-20">EN CUATRO PASOS</h1>
-    <ul class="grid grid-cols-4 gap-x-8 max-w-7xl mx-auto">
-      <li class="text-center">
-        <span class="text-8xl font-bold block mb-4">1</span>
-        <h3 class="text-2xl font-bold mb-3">SET-UP</h3>
-        <p class="text-lg">Implica migrar los datos y customizar el sito con el contenido de la empresa.</p>
+
+<!-- How to -->
+  <section class="py-24 px-12">
+    <h1 class="text-white text-center text-9xl mb-20">En Cuatro Pasos</h1>
+    <ul class="grid grid-cols-4 gap-x-20 max-w-[80%] mx-auto">
+      <li class="">
+        <span class="text-9xl font-diatype-mono block mb-3 pb-6 border-b-2 border-black text-gray-900">1</span>
+        <h3 class="text-2xl text-white mb-1">SET-UP</h3>
+        <p class="text-xl font-semibold">Implica migrar los datos y customizar el sito con el contenido de la empresa.</p>
       </li>
-      <li class="text-center">
-        <span class="text-8xl font-bold block mb-4">2</span>
-        <h3 class="text-2xl font-bold mb-3">CAPACITACIÓN</h3>
-        <p class="text-lg">Se entregan manuales de proceso y videos tutoriales para que el equipo que se capacite on-demand.</p>
+      <li class="">
+        <span class="text-9xl font-diatype-mono block mb-3 pb-6 border-b-2 border-black text-gray-900">2</span>
+        <h3 class="text-2xl text-white mb-1">CAPACITACIÓN</h3>
+        <p class="text-xl font-semibold">Se entregan manuales de proceso y videos tutoriales para que el equipo que se capacite on-demand.</p>
       </li>
-      <li class="text-center">
-        <span class="text-8xl font-bold block mb-4">3</span>
-        <h3 class="text-2xl font-bold mb-3">SERVICIO</h3>
-        <p class="text-lg">Implica migrar los datos y customizar el sito con el contenido de la empresa.</p>
+      <li class="">
+        <span class="text-9xl font-diatype-mono block mb-3 pb-6 border-b-2 border-black text-gray-900">3</span>
+        <h3 class="text-2xl text-white mb-1">SERVICIO</h3>
+        <p class="text-xl font-semibold">Implica migrar los datos y customizar el sito con el contenido de la empresa.</p>
       </li>
-      <li class="text-center">
-        <span class="text-8xl font-bold block mb-4">4</span>
-        <h3 class="text-2xl font-bold mb-3">SOPORTE</h3>
-        <p class="text-lg">Implica migrar los datos y customizar el sito con el contenido de la empresa.</p>
+      <li class="">
+        <span class="text-9xl font-diatype-mono block mb-3 pb-6 border-b-2 border-black text-gray-900">4</span>
+        <h3 class="text-2xl text-white mb-1">SOPORTE</h3>
+        <p class="text-xl font-semibold">Implica migrar los datos y customizar el sito con el contenido de la empresa.</p>
       </li>
     </ul>
     <button
       phx-click={show_modal("contact-modal")}
-      class="w-fit mt-4 bg-black text-white font-bold px-6 py-3 rounded-3xl shadow hover:bg-gray-600"
+      class="block w-fit mt-20 mx-auto bg-black text-white font-bold px-6 py-3 rounded-3xl shadow hover:bg-gray-600"
     >
       EMPEZAR AHORA
     </button>
   </section>
 
 <!-- Clients -->
-  <section id="clients" class=" text-white py-24 px-12">
-    <h1 class="text-center text-7xl font-bold mb-20">ELLOS YA NOS ELIGIERON</h1>
-    <ul class="grid grid-cols-3 gap-x-8 max-w-7xl mx-auto">
+  <section id="clients" class="py-24 px-12">
+    <h1 class="text-white text-center text-9xl mb-20">Ellos Ya Nos Eligieron</h1>
+    <ul class="grid grid-cols-4 gap-x-8 max-w-[80%] mx-auto">
       <li class="text-center">
-        <div class="bg-white rounded-lg overflow-hidden mb-4">
+        <div class="rounded-lg border-2 border-gray-900 overflow-hidden mb-4">
           <img src={~p"/images/chica-cartera-violeta.jpg"} class="w-full h-[300px] object-cover" />
         </div>
-        <h4 class="text-4xl font-bold mb-2">RETROKA</h4>
+        <h4 class="text-white text-4xl font-bold mb-2">ANTOLINA</h4>
         <span class="text-xl">SECOND HAND</span>
       </li>
       <li class="text-center">
-        <div class="bg-white rounded-lg overflow-hidden mb-4">
+        <div class="rounded-lg border-2 border-gray-900 overflow-hidden mb-4">
           <img src={~p"/images/ropa-west.jpg"} class="w-full h-[300px] object-cover" />
         </div>
-        <h4 class="text-4xl font-bold mb-2">VARIETE</h4>
+        <h4 class="text-white text-4xl font-bold mb-2">TODO VUELVE</h4>
         <span class="text-xl">SECOND HAND</span>
       </li>
       <li class="text-center">
-        <div class="bg-white rounded-lg overflow-hidden mb-4">
+        <div class="rounded-lg border-2 border-gray-900 overflow-hidden mb-4">
+          <img src={~p"/images/ropa-west.jpg"} class="w-full h-[300px] object-cover" />
+        </div>
+        <h4 class="text-white text-4xl font-bold mb-2">VARIETE</h4>
+        <span class="text-xl">SECOND HAND</span>
+      </li>
+      <li class="text-center">
+        <div class="rounded-lg border-2 border-gray-900 overflow-hidden mb-4">
           <img src={~p"/images/chica-radio-retro.jpg"} class="w-full h-[300px] object-cover" />
         </div>
-        <h4 class="text-4xl font-bold mb-2">1000 RAZONES</h4>
+        <h4 class="text-white text-4xl font-bold mb-2">1000 RAZONES</h4>
         <span class="text-xl">ALQUILER</span>
       </li>
     </ul>
@@ -158,10 +166,10 @@
 
 
 <!-- Call to Action -->
-  <section class=" text-white py-24 px-12 text-center">
-    <p class="text-2xl mb-4">Desde U$S 150 por mes</p>
-    <h1 class="text-[80px] leading-tight mb-8">¿Todo pronto para<br/>despegar?</h1>
-    <img src={~p"/images/paloma.png"} class="w-24 mx-auto mb-6" />
+  <section class="py-24 px-12 text-center">
+    <p class="text-2xl font-diatype-mono font-semibold text-gray-900 mb-4">Desde U$S 150 por mes</p>
+    <h1 class="text-white text-[112px] leading-[1] font-semibold mb-20">¿Todo pronto para<br/>despegar?</h1>
+    <img src={~p"/images/paloma.png"} class="w-48 mx-auto mb-20" />
     <button
       phx-click={show_modal("contact-modal")}
       class="bg-black text-white font-bold px-8 py-4 rounded-3xl text-xl hover:bg-gray-800"
