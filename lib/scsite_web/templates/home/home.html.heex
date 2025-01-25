@@ -1,11 +1,11 @@
 <div class="">
   <!-- Hero Section -->
-  <div class="max-w-[90%] mx-auto text-white pt-8 lg:pt-24 pb-12 flex flex-col gap-y-2 items-center">
+  <div class="max-w-[90%] mx-auto text-white md:pt-8 lg:pt-24 pb-12 flex flex-col gap-y-2 items-center">
     <div class="container flex flex-col lg:flex-row gap-y-4 lg:gap-x-5">
-      <img src={~p"/images/regadera.gif"} class="max-w-[500px] object-contain" />
-      <p class="pl-4 lg:pl-0 text-5xl lg:text-[118px] leading-[1] font-medium">Hacé Crecer Tu Second - Hand & Tienda De Alquiler</p>
+      <img src={~p"/images/regadera.gif"} class="max-w-[200px] lg:max-w-[500px] object-contain self-center" />
+      <p class="pl-4 lg:pl-0 text-[40px] lg:text-[118px] leading-[1] font-medium">Hacé Crecer Tu Second - Hand & Tienda De Alquiler</p>
     </div>
-    <p class="text-2xl mt-6 text-center lg:w-3/4 text-black whitespace-pre-wrap">
+    <p class="text-xl md:text-2xl my-6 md:mt-6 text-center lg:w-3/4 text-black md:whitespace-pre-wrap">
       Gestioná tu stock local, proveedores, pago de comisiones y ventas por e-commerce.
       Todo en un solo lugar.
     </p>
@@ -17,7 +17,7 @@
     </button>
   </div>
   
-  <div class="flex overflow-hidden h-20 my-20 space-x-1 border-y-2 border-gray-900">
+  <div class="flex overflow-hidden lg:h-20 my-20 space-x-1 border-y-2 border-gray-900">
     <div class="font-diatype-mono whitespace-nowrap text-gray-900 text-5xl animate-loop-scroll flex items-center pt-1" aria-hidden="true">
       EL FUTURO ES COLABORATIVO &nbsp; <span class="block text-6xl mb-1 mx-0.5">⇄</span> &nbsp; EL FUTURO ES COMPARTIDO &nbsp;
       <.icon name="hero-globe-alt" class="h-14 w-14 mb-1 mx-0.5" /> &nbsp;
@@ -41,13 +41,15 @@
       <li class="text-white relative bg-blue-600 rounded-3xl overflow-hidden md:bg-transparent md:rounded-none">
         <!-- Mobile Image (full width background) -->
         <div class="md:hidden">
-          <img src={~p"/images/mobile-BN.jpg"} class="w-full h-[300px] object-cover opacity-30" />
-          <div class="absolute inset-0 p-8 flex flex-col justify-end">
-            <h3 class="text-4xl mb-4 font-bold">DESDE DONDE ESTES</h3>
-            <p class="text-xl text-black font-semibold mb-6">
-              <.icon name="hero-arrow-right" class="h-6 w-6 inline" /> 
-              Administra tu negocio desde cualquier lugar.
-            </p>
+          <img src={~p"/images/mobile-BN.jpg"} class="w-full h-[350px] object-cover opacity-30" />
+          <div class="absolute inset-0 p-8 flex flex-col justify-between">
+            <div>
+              <h3 class="text-4xl mb-4 font-bold">DESDE DONDE ESTES</h3>
+              <p class="text-xl text-black font-semibold mb-6">
+                <.icon name="hero-arrow-right" class="h-6 w-6 inline" /> 
+                Administra tu negocio desde cualquier lugar.
+              </p>
+            </div>
             <button
               phx-click={show_modal("contact-modal")}
               class="w-fit bg-white text-blue-600 font-bold px-6 py-3 rounded-3xl shadow"
@@ -79,13 +81,15 @@
       <li class="text-white relative bg-blue-600 rounded-3xl overflow-hidden md:bg-transparent md:rounded-none md:flex md:justify-end">
         <!-- Mobile Image (full width background) -->
         <div class="md:hidden">
-          <img src={~p"/images/pc-BN.jpg"} class="w-full h-[300px] object-cover opacity-30" />
-          <div class="absolute inset-0 p-8 flex flex-col justify-end">
-            <h3 class="text-4xl mb-4 font-bold">TODO SINCRONIZADO</h3>
-            <p class="text-xl text-black font-semibold mb-6">
+          <img src={~p"/images/pc-BN.jpg"} class="w-full h-[350px] object-cover opacity-30" />
+          <div class="absolute inset-0 p-8 flex flex-col justify-between">
+            <div>
+              <h3 class="text-4xl mb-4 font-bold">TODO SINCRONIZADO</h3>
+              <p class="text-xl text-black font-semibold mb-6">
               <.icon name="hero-arrow-right" class="h-6 w-6 inline" /> 
               El stock de tu tienda fisica sincronizado con tu tienda online para una excelente experiencia.
-            </p>
+              </p>
+            </div>
             <button
               phx-click={show_modal("contact-modal")}
               class="w-fit bg-white text-blue-600 font-bold px-6 py-3 rounded-3xl shadow"
@@ -117,13 +121,15 @@
       <li class="text-white relative bg-blue-600 rounded-3xl overflow-hidden md:bg-transparent md:rounded-none">
         <!-- Mobile Image (full width background) -->
         <div class="md:hidden">
-          <img src={~p"/images/caja-ropa-BN.jpg"} class="w-full h-[300px] object-cover opacity-30" />
-          <div class="absolute inset-0 p-8 flex flex-col justify-end">
-            <h3 class="text-4xl mb-4 font-bold">PROVEEDORES & COMISIONES</h3>
-            <p class="text-xl text-black font-semibold mb-6">
+          <img src={~p"/images/caja-ropa-BN.jpg"} class="w-full h-[400px] object-cover opacity-30" />
+          <div class="absolute inset-0 p-8 flex flex-col justify-between">
+            <div>
+              <h3 class="text-4xl mb-4 font-bold">PROVEEDORES & COMISIONES</h3>
+              <p class="text-xl text-black font-semibold mb-6">
               <.icon name="hero-arrow-right" class="h-6 w-6 inline" /> 
-              Gestiona multiples proveedores con comisiones por ventas a la perfección!
-            </p>
+                Gestiona multiples proveedores con comisiones por ventas a la perfección!
+              </p>
+            </div>
             <button
               phx-click={show_modal("contact-modal")}
               class="w-fit bg-white text-blue-600 font-bold px-6 py-3 rounded-3xl shadow"
@@ -155,13 +161,15 @@
       <li class="text-white relative bg-blue-600 rounded-3xl overflow-hidden md:bg-transparent md:rounded-none md:flex md:justify-end">
         <!-- Mobile Image (full width background) -->
         <div class="md:hidden">
-          <img src={~p"/images/pc-BN.jpg"} class="w-full h-[300px] object-cover opacity-30" />
-          <div class="absolute inset-0 p-8 flex flex-col justify-end">
-            <h3 class="text-4xl mb-4 font-bold">HACE EXPLOTAR TUS VENTAS!</h3>
-            <p class="text-xl text-black font-semibold mb-6">
+          <img src={~p"/images/pc-BN.jpg"} class="w-full h-[350px] object-cover opacity-30" />
+          <div class="absolute inset-0 p-8 flex flex-col justify-between">
+            <div>
+              <h3 class="text-4xl mb-4 font-bold">HACE EXPLOTAR TUS VENTAS!</h3>
+              <p class="text-xl text-black font-semibold mb-6">
               <.icon name="hero-arrow-right" class="h-6 w-6 inline" /> 
-              Personaliza el sitio y desarrolla tu presencia online.
-            </p>
+                Personaliza el sitio y desarrolla tu presencia online.
+              </p>
+            </div>
             <button
               phx-click={show_modal("contact-modal")}
               class="w-fit bg-white text-blue-600 font-bold px-6 py-3 rounded-3xl shadow"
