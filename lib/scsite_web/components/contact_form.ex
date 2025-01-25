@@ -12,12 +12,14 @@ defmodule ScsiteWeb.ContactForm do
 
     ~H"""
     <div>
-      <h3>Contact</h3>
+      <h2 class="text-3xl font-medium text-blue-600">Contacto</h2>
       <CComp.simple_form for={@form} method="post" action={~p"/contact"}>
-        <CComp.input field={@form[:email]} type="email" label="Email"/>
-        <CComp.input field={@form[:message]} type="textarea" label="Message" rows="5" />
+        <CComp.input field={@form[:name]} type="text" label="Nombre *" minlength="3" required/>
+        <CComp.input field={@form[:email]} type="email" label="Email *" required/>
+        <CComp.input field={@form[:phone]} type="text" label="Teléfono" minlength="8" maxlength="13"/>
+        <CComp.input field={@form[:message]} type="textarea" label="Mensaje" rows="5" maxlength="600"/>
         <:actions>
-          <CComp.button>Save</CComp.button>
+          <CComp.button>Enviar</CComp.button>
         </:actions>
       </CComp.simple_form>
     </div>

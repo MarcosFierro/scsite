@@ -3,7 +3,7 @@
   <div class="max-w-[90%] mx-auto text-white pt-8 lg:pt-24 pb-12 flex flex-col gap-y-2 items-center">
     <div class="container flex flex-col lg:flex-row gap-y-4 lg:gap-x-5">
       <img src={~p"/images/regadera.gif"} class="max-w-[500px] object-contain" />
-      <p class="pl-4 lg:pl-0 text-5xl lg:text-[118px] leading-[1] font-[450px]">Hacé Crecer Tu Second - Hand & Tienda De Alquiler</p>
+      <p class="pl-4 lg:pl-0 text-5xl lg:text-[118px] leading-[1] font-medium">Hacé Crecer Tu Second - Hand & Tienda De Alquiler</p>
     </div>
     <p class="text-2xl mt-6 text-center lg:w-3/4 text-black whitespace-pre-wrap">
       Gestioná tu stock local, proveedores, pago de comisiones y ventas por e-commerce.
@@ -11,27 +11,27 @@
     </p>
     <button
       phx-click={show_modal("contact-modal")}
-      class="w-fit mt-4 bg-black text-white font-bold px-6 py-3 rounded-3xl shadow hover:bg-gray-600"
+      class="w-fit mt-4 bg-black text-white font-bold px-16 py-4 rounded-3xl shadow hover:bg-gray-600"
     >
       EMPEZAR AHORA
     </button>
   </div>
   
-  <div class="flex overflow-hidden h-[50px] my-20 space-x-32 border-y-2 border-gray-900">
-    <div class="font-diatype-mono whitespace-nowrap text-gray-900 font-light text-3xl animate-loop-scroll flex items-center" aria-hidden="true">
-      EL FUTURO ES COLABORATIVO &nbsp; ⇄ &nbsp; EL FUTURO ES COMPARTIDO &nbsp;
-      <.icon name="hero-globe-alt" class="h-8 w-8" /> &nbsp;
-      EL FUTURO ES CIRCULAR &nbsp; <.icon name="hero-arrow-path" class="h-8 w-8" /> &nbsp;
+  <div class="flex overflow-hidden h-20 my-20 space-x-1 border-y-2 border-gray-900">
+    <div class="font-diatype-mono whitespace-nowrap text-gray-900 text-5xl animate-loop-scroll flex items-center pt-1" aria-hidden="true">
+      EL FUTURO ES COLABORATIVO &nbsp; <span class="block text-6xl mb-1 mx-0.5">⇄</span> &nbsp; EL FUTURO ES COMPARTIDO &nbsp;
+      <.icon name="hero-globe-alt" class="h-14 w-14 mb-1 mx-0.5" /> &nbsp;
+      EL FUTURO ES CIRCULAR &nbsp; <.icon name="hero-arrow-path" class="h-14 w-14 mb-1 mx-0.5" /> &nbsp;
     </div>
-    <div class="font-diatype-mono whitespace-nowrap text-gray-900 font-light text-3xl animate-loop-scroll flex items-center" aria-hidden="true">
-      EL FUTURO ES COLABORATIVO &nbsp; ⇄ &nbsp; EL FUTURO ES COMPARTIDO &nbsp;
-      <.icon name="hero-globe-alt" class="h-8 w-8" /> &nbsp;
-      EL FUTURO ES CIRCULAR &nbsp; <.icon name="hero-arrow-path" class="h-8 w-8" /> &nbsp;
+    <div class="font-diatype-mono whitespace-nowrap text-gray-900 font-light text-5xl animate-loop-scroll flex items-center pt-1" aria-hidden="true">
+      EL FUTURO ES COLABORATIVO &nbsp; <span class="block text-6xl mb-1 mx-0.5">⇄</span> &nbsp; EL FUTURO ES COMPARTIDO &nbsp;
+      <.icon name="hero-globe-alt" class="h-14 w-14 mb-1 mx-0.5" /> &nbsp;
+      EL FUTURO ES CIRCULAR &nbsp; <.icon name="hero-arrow-path" class="h-14 w-14 mb-1 mx-0.5" /> &nbsp;
     </div>
-    <div class="font-diatype-mono whitespace-nowrap text-gray-900 font-light text-3xl animate-loop-scroll flex items-center" aria-hidden="true">
-      EL FUTURO ES COLABORATIVO &nbsp; ⇄ &nbsp; EL FUTURO ES COMPARTIDO &nbsp;
-      <.icon name="hero-globe-alt" class="h-8 w-8" /> &nbsp;
-      EL FUTURO ES CIRCULAR &nbsp; <.icon name="hero-arrow-path" class="h-8 w-8" /> &nbsp;
+    <div class="font-diatype-mono whitespace-nowrap text-gray-900 font-light text-5xl animate-loop-scroll flex items-center pt-1" aria-hidden="true">
+      EL FUTURO ES COLABORATIVO &nbsp; <span class="block text-6xl mb-1 mx-0.5">⇄</span> &nbsp; EL FUTURO ES COMPARTIDO &nbsp;
+      <.icon name="hero-globe-alt" class="h-14 w-14 mb-1 mx-0.5" /> &nbsp;
+      EL FUTURO ES CIRCULAR &nbsp; <.icon name="hero-arrow-path" class="h-14 w-14 mb-1 mx-0.5" /> &nbsp;
     </div>
   </div>
   
@@ -41,7 +41,7 @@
       <li class="text-white relative bg-blue-600 rounded-3xl overflow-hidden md:bg-transparent md:rounded-none">
         <!-- Mobile Image (full width background) -->
         <div class="md:hidden">
-          <img src={~p"/images/mobile-BN.jpg"} class="w-full h-[300px] object-cover opacity-20" />
+          <img src={~p"/images/mobile-BN.jpg"} class="w-full h-[300px] object-cover opacity-30" />
           <div class="absolute inset-0 p-8 flex flex-col justify-end">
             <h3 class="text-4xl mb-4 font-bold">DESDE DONDE ESTES</h3>
             <p class="text-xl text-black font-semibold mb-6">
@@ -76,10 +76,10 @@
         </div>
       </li>
 
-      <li class="text-white relative bg-purple-600 rounded-3xl overflow-hidden md:bg-transparent md:rounded-none md:flex md:justify-end">
+      <li class="text-white relative bg-blue-600 rounded-3xl overflow-hidden md:bg-transparent md:rounded-none md:flex md:justify-end">
         <!-- Mobile Image (full width background) -->
         <div class="md:hidden">
-          <img src={~p"/images/pc-BN.jpg"} class="w-full h-[300px] object-cover opacity-20" />
+          <img src={~p"/images/pc-BN.jpg"} class="w-full h-[300px] object-cover opacity-30" />
           <div class="absolute inset-0 p-8 flex flex-col justify-end">
             <h3 class="text-4xl mb-4 font-bold">TODO SINCRONIZADO</h3>
             <p class="text-xl text-black font-semibold mb-6">
@@ -88,7 +88,7 @@
             </p>
             <button
               phx-click={show_modal("contact-modal")}
-              class="w-fit bg-white text-purple-600 font-bold px-6 py-3 rounded-3xl shadow"
+              class="w-fit bg-white text-blue-600 font-bold px-6 py-3 rounded-3xl shadow"
             >
               EMPEZAR AHORA
             </button>
@@ -114,10 +114,10 @@
         </div>
       </li>
 
-      <li class="text-white relative bg-green-600 rounded-3xl overflow-hidden md:bg-transparent md:rounded-none">
+      <li class="text-white relative bg-blue-600 rounded-3xl overflow-hidden md:bg-transparent md:rounded-none">
         <!-- Mobile Image (full width background) -->
         <div class="md:hidden">
-          <img src={~p"/images/caja-ropa-BN.jpg"} class="w-full h-[300px] object-cover opacity-20" />
+          <img src={~p"/images/caja-ropa-BN.jpg"} class="w-full h-[300px] object-cover opacity-30" />
           <div class="absolute inset-0 p-8 flex flex-col justify-end">
             <h3 class="text-4xl mb-4 font-bold">PROVEEDORES & COMISIONES</h3>
             <p class="text-xl text-black font-semibold mb-6">
@@ -126,7 +126,7 @@
             </p>
             <button
               phx-click={show_modal("contact-modal")}
-              class="w-fit bg-white text-green-600 font-bold px-6 py-3 rounded-3xl shadow"
+              class="w-fit bg-white text-blue-600 font-bold px-6 py-3 rounded-3xl shadow"
             >
               EMPEZAR AHORA
             </button>
@@ -152,10 +152,10 @@
         </div>
       </li>
 
-      <li class="text-white relative bg-orange-600 rounded-3xl overflow-hidden md:bg-transparent md:rounded-none md:flex md:justify-end">
+      <li class="text-white relative bg-blue-600 rounded-3xl overflow-hidden md:bg-transparent md:rounded-none md:flex md:justify-end">
         <!-- Mobile Image (full width background) -->
         <div class="md:hidden">
-          <img src={~p"/images/pc-BN.jpg"} class="w-full h-[300px] object-cover opacity-20" />
+          <img src={~p"/images/pc-BN.jpg"} class="w-full h-[300px] object-cover opacity-30" />
           <div class="absolute inset-0 p-8 flex flex-col justify-end">
             <h3 class="text-4xl mb-4 font-bold">HACE EXPLOTAR TUS VENTAS!</h3>
             <p class="text-xl text-black font-semibold mb-6">
@@ -164,7 +164,7 @@
             </p>
             <button
               phx-click={show_modal("contact-modal")}
-              class="w-fit bg-white text-orange-600 font-bold px-6 py-3 rounded-3xl shadow"
+              class="w-fit bg-white text-blue-600 font-bold px-6 py-3 rounded-3xl shadow"
             >
               EMPEZAR AHORA
             </button>
@@ -256,7 +256,7 @@
 
   <button
     phx-click={show_modal("contact-modal")}
-    class="block w-fit mt-12 md:mt-20 mx-auto bg-black text-white font-bold px-6 py-3 rounded-3xl shadow hover:bg-gray-600"
+    class="block w-fit mt-12 md:mt-20 mx-auto bg-black text-white font-bold px-16 py-4 rounded-3xl shadow hover:bg-gray-600"
   >
     EMPEZAR AHORA
   </button>
@@ -270,23 +270,16 @@
       <ul class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-[90%] lg:max-w-[80%] mx-auto">
         <li class="text-center">
           <div class="rounded-lg border-2 border-gray-900 overflow-hidden mb-4">
-            <img src={~p"/images/chica-cartera-violeta.jpg"} class="w-full h-[300px] object-cover" />
+            <img src={~p"/images/vestido-amarill.jpg"} class="w-full h-[300px] object-cover" />
           </div>
           <h4 class="text-white text-4xl font-bold mb-2">ANTOLINA</h4>
           <span class="text-xl">SECOND HAND</span>
         </li>
         <li class="text-center">
           <div class="rounded-lg border-2 border-gray-900 overflow-hidden mb-4">
-            <img src={~p"/images/ropa-west.jpg"} class="w-full h-[300px] object-cover" />
+            <img src={~p"/images/sombrero-sombra.jpg"} class="w-full h-[300px] object-none" />
           </div>
           <h4 class="text-white text-4xl font-bold mb-2">TODO VUELVE</h4>
-          <span class="text-xl">SECOND HAND</span>
-        </li>
-        <li class="text-center">
-          <div class="rounded-lg border-2 border-gray-900 overflow-hidden mb-4">
-            <img src={~p"/images/ropa-west.jpg"} class="w-full h-[300px] object-cover" />
-          </div>
-          <h4 class="text-white text-4xl font-bold mb-2">VARIETE</h4>
           <span class="text-xl">SECOND HAND</span>
         </li>
         <li class="text-center">
@@ -295,6 +288,13 @@
           </div>
           <h4 class="text-white text-4xl font-bold mb-2">1000 RAZONES</h4>
           <span class="text-xl">ALQUILER</span>
+        </li>
+        <li class="text-center">
+          <div class="rounded-lg border-2 border-gray-900 overflow-hidden mb-4">
+            <img src={~p"/images/ropa-west.jpg"} class="w-full h-[300px] object-cover" />
+          </div>
+          <h4 class="text-white text-4xl font-bold mb-2">VARIETE</h4>
+          <span class="text-xl">SECOND HAND</span>
         </li>
       </ul>
     </div>
@@ -305,14 +305,14 @@
       <ul class="grid grid-cols-4 gap-x-8 max-w-[80%] mx-auto">
         <li class="text-center">
           <div class="rounded-lg border-2 border-gray-900 overflow-hidden mb-4">
-            <img src={~p"/images/chica-cartera-violeta.jpg"} class="w-full h-[300px] object-cover" />
+            <img src={~p"/images/vestido-amarill.jpg"} class="w-full h-[300px] object-cover lg:object-[0%_84%]" />
           </div>
           <h4 class="text-white text-4xl font-bold mb-2">ANTOLINA</h4>
           <span class="text-xl">SECOND HAND</span>
         </li>
         <li class="text-center">
           <div class="rounded-lg border-2 border-gray-900 overflow-hidden mb-4">
-            <img src={~p"/images/ropa-west.jpg"} class="w-full h-[300px] object-cover" />
+            <img src={~p"/images/sombrero-sombra.jpg"} class="w-full h-[300px] object-none" />
           </div>
           <h4 class="text-white text-4xl font-bold mb-2">TODO VUELVE</h4>
           <span class="text-xl">SECOND HAND</span>
@@ -342,7 +342,7 @@
     <img src={~p"/images/paloma.png"} class="w-36 lg:w-48 mx-auto mb-20" />
     <button
       phx-click={show_modal("contact-modal")}
-      class="bg-black text-white font-bold px-8 py-4 rounded-3xl text-xl hover:bg-gray-800"
+      class="bg-black text-white font-bold px-16 py-4 rounded-3xl text-xl hover:bg-gray-800"
     >
       EMPEZAR AHORA
     </button>
