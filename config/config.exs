@@ -8,7 +8,8 @@
 import Config
 
 config :scsite,
-  generators: [timestamp_type: :utc_datetime]
+  generators: [timestamp_type: :utc_datetime],
+  ga_id: System.get_env("GA_ID")
 
 # Configures the endpoint
 config :scsite, ScsiteWeb.Endpoint,
