@@ -3,6 +3,7 @@ defmodule ScsiteWeb.Router do
 
   pipeline :browser do
     plug :accepts, ["html"]
+    plug :redirect_apex_to_www
     plug :fetch_session
     plug :fetch_live_flash
     plug :put_root_layout, html: {ScsiteWeb.Layouts, :root}
@@ -10,8 +11,18 @@ defmodule ScsiteWeb.Router do
     plug :put_secure_browser_headers
   end
 
-  pipeline :api do
-    plug :accepts, ["json"]
+  # pipeline :api do
+  #   plug :accepts, ["json"]
+  # end
+
+  defp redirect_apex_to_www(conn, _opts) do
+    if conn.host == "softwarecircular.com" do
+      conn
+      |> Phoenix.Controller.redirect(external: "https://www.#{conn.host}#{conn.request_path}")
+      |> halt()
+    else
+      conn
+    end
   end
 
   scope "/", ScsiteWeb do
