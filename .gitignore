@@ -35,3 +35,5 @@ scsite-*.tar
 npm-debug.log
 /assets/node_modules/
 
+# ignore env file
+.env

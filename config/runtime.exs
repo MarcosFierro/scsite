@@ -100,5 +100,7 @@ if config_env() == :prod do
   #
   # See https://hexdocs.pm/swoosh/Swoosh.html#module-installation for details.
 
-  config :scsite, ga_id: System.get_env("GA_ID")
+  config :scsite,
+    ga_id: System.get_env("GA_ID"),
+    gtm_id: System.get_env("GTM_ID")
 end
