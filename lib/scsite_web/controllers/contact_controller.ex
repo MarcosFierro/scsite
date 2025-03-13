@@ -9,7 +9,9 @@ defmodule ScsiteWeb.ContactController do
     IO.inspect(params)
     body = Jason.encode!(%{
       email: params["email"],
-      message: params["message"]
+      message: params["message"],
+      name: params["name"],
+      phone: params["phone"]
     })
 
     case Tesla.post(client, "/#{System.get_env("FORMSPREE_CONTACT_FORM_ID")}", body) do
