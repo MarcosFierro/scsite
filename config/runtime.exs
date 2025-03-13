@@ -102,5 +102,6 @@ if config_env() == :prod do
 
   config :scsite,
     ga_id: System.get_env("GA_ID"),
-    gtm_id: System.get_env("GTM_ID")
+    gtm_id: System.get_env("GTM_ID"),
+    meta_id: System.get_env("META_ID")
 end
